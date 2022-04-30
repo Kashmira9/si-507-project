@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Home</title>
+<style>
+    body{
+    /* display: flex; */
+    background: linear-gradient(to bottom, #fbac03, #f7ca03, #f2de07, #fef57b, #fbf7bb);
+    width:90%;
+    margin: auto;
+    /* height: 100vh; */
+    /* height: 100%;  */
+    /* overflow: hidden */
+  }
+  .accordion {
+    background-color: #030300;
+    color: rgb(250, 250, 248);
+    cursor: pointer;
+    padding: 18px;
+    width: 30%;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    margin: 1rem 0;
+    /* -moz-box-align: center; */
+    /* margin-top: 19em; */
+    margin-left: 17em ;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #918f79;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+ 
+  .accordion1 {
+    background-color: #15023d;
+    color: rgb(250, 250, 248);
+    cursor: pointer;
+    padding: 18px;
+    width: 10%;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    margin: 1rem 0;
+    /* -moz-box-align: center; */
+    /* margin-top: 1em; */
+    margin-left: 52em ;
+    /* margin-bottom: 2em; */
+  }
+  
+  .active,
+  .accordion1:hover {
+    background-color: #918f79;
+  }
+  
+  .accordion1:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+  .ben{
+    font-family: 'Lucida Console', Monospace;
+    /* font: 500px; */
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(17, 1, 1);
+    margin-top: 1em;
+    
+}
+</style>
+</head>
+<body>
+    <div class="ben">Information about restaurants in {{city}}. </div>
+    <div>{{fig}}</div> 
+    <div><a href="/{{mode}}/states/{{state}}/city/{{city}}/info"><button class="accordion buttonToHide">Table Reservation</button></a></div>
+</body>
+</html>

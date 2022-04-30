@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+    <title>Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/city.css') }}">
+    </head>
+    <body>
+<div class='conatiner'>
+    <div class='ben'>
+      {{state}}: Which city you want to {{mode}}? 
+    </div>
+    <div>
+        <a href="/{{mode}}/states/{{state}}/city/{{city1}}"><div class='split-pane_button split-pane_button.-regular center'>{{city1}}</div></a>
+              
+        <a href="/{{mode}}/states/{{state}}/city/{{city2}}"><div class='split-pane_button split-pane_button.-dark center'>{{city2}}</div></a>
+              
+        <a href="/{{mode}}/states/{{state}}/city/{{city3}}"><div class='split-pane_button split-pane_button.-green center'>{{city3}}</div></a>
+              
+        <a href="/{{mode}}/states/{{state}}/city/{{city4}}"><div class='split-pane_button split-pane_button.-blue center'>{{city4}}</div></a>
+                  
+        <a href="/{{mode}}/states/{{state}}/city/{{city5}}"><div class='split-pane_button split-pane_button.-salmon center'>{{city5}}</div></a>
+              
+        <a href="/{{mode}}/states/{{state}}/city/{{city6}}"><div class='split-pane_button split-pane_button.-sun center'>{{city6}}</div></a>
+        <a href="/"><button class="accordion1 buttonToHide">Home</button></a>
+            </div>
+        </div>
+        </body>
+        </html>
+        
+   

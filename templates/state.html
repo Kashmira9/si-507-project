@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+    <title>Home</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/state.css') }}">
+    </head>
+    <body>
+<div class='conatiner'>
+    <div class='ben'>
+      {% if mode == 'dine-in' %}
+      Dine-in: Which state are you in? 
+      {% else %}
+      Delivery: Which state are you in?
+      {% endif %}
+    </div>
+    <div>
+    <a href="/{{mode}}/states/Arizona"><div class='split-pane_button  split-pane_button.-regular center'>Arizona</div></a>
+      
+    <a href="/{{mode}}/states/California"><div class='split-pane_button split-pane_button.-dark center'>California</div></a>
+      
+    <a href="/{{mode}}/states/Florida"><div class='split-pane_button split-pane_button.-green center'>Florida</div></a>
+      
+    <a href="/{{mode}}/states/Illinois"><div class='split-pane_button split-pane_button.-blue center'>Illinois</div></a>
+          
+    <a href="/{{mode}}/states/Michigan"><div class='split-pane_button split-pane_button.-salmon center'>Michigan</div></a>
+      
+    <a href="/{{mode}}/states/New Jersey"><div class='split-pane_button split-pane_button.-sun center'>New Jersey</div></a>
+    <a href="/{{mode}}/states/North Carolina"><div class='split-pane_button split-pane_button.-alge center'>North Carolina</div></a>
+      
+    <a href="/{{mode}}/states/Texas"><div class='split-pane_button split-pane_button.-flower center'>Texas</div></a>
+      
+    <a href="/{{mode}}/states/Washington"><div class='split-pane_button split-pane_button.-flower center'>Washington</div></a>
+    </div>
+</div>
+</body>
+</html>

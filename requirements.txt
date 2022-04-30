@@ -1,0 +1,10 @@
+beautifulsoup4==4.9.0
+bs4==0.0.1
+requests==2.23.0
+Flask==1.1.2
+Jinja2==2.11.1
+plotly==4.6.0
+plotly-geo==1.0.0
+geopandas==0.3.0
+pyshp==1.2.10
+shapely==1.6.3

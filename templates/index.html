@@ -1,0 +1,91 @@
+<!-- Inspired by https://bert.house/en/-->
+<html>
+<head>
+    <title>Home</title>
+    <style>
+
+html {
+    background: rgb(222, 142, 72);
+    background: radial-gradient(circle, rgb(233, 193, 158,1) 0%, rgb(245, 158, 107) 22%, rgb(253, 121, 45,1) 52%);
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .accordion {
+    background-color: #000000;
+    color: rgb(251, 249, 249);
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    font-size: 50px;
+    transition: 0.4s;
+    margin: 1rem 0;
+    margin-left: 13.5em;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #918f79;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+  
+  .ben{
+      font-family: 'Lucida Console', Monospace;
+      /* font: 500px; */
+      text-align: center;
+      font-size: 5em;
+      font-weight: bold;
+      
+  }
+
+  .ben1{
+    font-family: 'Lucida Console', Monospace;
+    /* font: 500px; */
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: #2d0255;
+    
+}
+      </style>
+    </head>
+    <body>
+        <div>
+    
+    <div class="ben1">WELCOME</div>
+    <div class="ben">Hungry Panda</div>
+    <div><img src="{{url_for('static', filename='images/pand.png') }}" alt="panda" style="width:500px;height:500px" class="center"> </div>
+
+    <a href="/selection"><div class="accordion buttonToHide">Enter</div></a>
+</div>
+         
+    </body>
+    </html> 

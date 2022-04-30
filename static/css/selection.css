@@ -1,0 +1,48 @@
+body{
+    background: linear-gradient(to bottom, #47067d, #721790, #a63ec0, #a76ec6, #b9a1cb);
+    width:90%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .accordion {
+    background-color: #f8ec10;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    text-align: left;
+    outline: none;
+    font-size: 50px;
+    transition: 0.4s;
+    margin: 1rem 0;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #918f79;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+  .ben{
+    font-family: 'Lucida Console', Monospace;
+    /* font: 500px; */
+    text-align: left;
+    font-size: 8em;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1em;
+    
+}

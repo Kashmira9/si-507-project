@@ -1,0 +1,161 @@
+:root {
+    --color-dark:  #161616;
+    --color-ocean:  #161616;;
+    --color-grass: #161616;;
+    --color-snow: #FFFFFF;
+    --color-salmon: #161616;
+    --color-sun: #161616;
+    --color-alge: #161616;
+    --color-flower: #161616;
+    --color-smoke: #161616;
+  
+    --borderRadius: 36px;
+  
+    --font-face: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  body {
+    display: flex;
+    background: linear-gradient(to bottom, #440909, #7d0303, #d83b3b, #ee6c6c, #f9cdcd);
+    width:90%;
+    margin: auto;
+    height: 100vh;
+  
+  
+    justify-content: center;
+    align-items: center;
+  
+    @media (min-width: 992px) {
+      border-width: 30px;
+    }
+  }
+  
+  
+  
+  .ben{
+    font-family: 'Lucida Console', Monospace;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1em;
+    
+  }
+
+  .container {  
+    font-family: 'Lucida Console', Monospace;
+    font-size: 40em;
+    text-align: center;
+    font-size: 8em;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+
+  .split-pane_button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:1000;
+    font-size: 10em;
+    font-weight: bold;
+    background: black;
+    border: 1px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /* width: 20em; */
+    width: 30%;
+    padding: 1em;
+    font-size: 2em;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .split-pane_button:hover{
+    text-decoration: none;
+    background-color: rgb(61, 24, 183);
+    border-color: white;
+    cursor: pointer;
+  }
+  
+  .split-pane_button.-regular {
+    color: var(--color-snow);
+    background: var(--color-grass);
+  
+  } 
+  
+  .split-pane_button.-dark {
+    color: var(--color-snow);
+    background: var(--color-dark);
+
+  
+  }
+  
+  .split-pane_button.-green {
+    color: var(--color-snow);
+    background: var(--color-grass);
+  }
+  
+  .split-pane_button.-blue {
+    color: var(--color-snow);
+    background: var(--color-ocean);
+  }
+  
+  .split-pane_button.-salmon {
+    color: var(--color-snow);
+    background: var(--color-salmon);
+  }
+  
+  .split-pane_button.-sun {
+    color: (--color-snow);
+    background: var(--color-sun);
+  }
+  .accordion1 {
+    background-color: #15023d;
+    color: rgb(250, 250, 248);
+    cursor: pointer;
+    padding: 18px;
+    width: 10%;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    margin: 1rem 0;
+    /* -moz-box-align: center; */
+    margin-top: 5em;
+    margin-left: 48em ;
+    /* margin-bottom: 2em; */
+  }
+  
+  .active,
+  .accordion1:hover {
+    background-color: #918f79;
+  }
+  
+  .accordion1:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }

@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Home</title>
+    <style>
+        html{
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+    background: linear-gradient(to bottom, #fbac03, #f7ca03, #f2de07, #fef57b, #fbf7bb);
+    width:90%;
+    /* margin: 0 auto; */
+    /* height: 100vh; */
+  }
+
+.ben{
+  font-family: 'Lucida Console', Monospace;
+  /* font: 500px; */
+  text-align: left;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(17, 1, 1);
+  margin-top: 1em;
+}
+
+#button1 {
+  background-color: #000600; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 150%;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin-left: 23em;
+}
+#button1:hover {
+  /* background-color: #000900; Green */
+  /* color: rgba(244, 228, 2, 0.926); */
+  text-decoration: none;
+  background-color: rgb(61, 24, 183);
+  border-color: white;
+  cursor: pointer;
+}
+
+</style>
+    
+</head>
+
+<body>
+    <div class="ben">Check vaccination status in your state.</div>
+    <div id="plotly-plot"><div id='chart' class='chart'></div></div>
+    <div><a href="/dine-in/state"><button id="button1">NEXT</button></a></div>
+</body>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+
+</html>
