@@ -1,7 +1,5 @@
 **Final Project SI507**
 
-# WN2022 SI 507 Final Project
-
 
 ## Project Title: Food Panda
 
